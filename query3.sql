@@ -6,5 +6,12 @@ WITH "NumDescript" AS (
 SELECT COUNT(num_d) AS "result"
 FROM NumDescript N, BID B
 WHERE N.item_id = B.item_id
-  AND num_d = 4
-:
+  AND num_d = 4;
+
+--Marvin's query
+WITH tmp as (
+    SELECT c.item_id, count(*) as category_count 
+    from Category c
+GROUP BY c.item_id)
+SELECT count(*) from tmp 
+WHERE tmp.category_count = 4;
