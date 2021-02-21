@@ -1,0 +1,12 @@
+.separator |
+
+.import dat_files/users.dat User
+update User set location = null where location='NULL';
+update User set country = null where country='NULL';
+
+.import dat_files/items.dat Item
+update Item set description = null where description='NULL';
+
+.import dat_files/bids.dat Bid
+
+.import dat_files/categories.dat Category
