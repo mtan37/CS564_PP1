@@ -38,8 +38,8 @@ DROP TABLE if exists Bid;
 create table Bid(
     item_id TEXT,
     bidder_id TEXT,
-    time TEXT,
     amount REAL NOT NULL,
+    time TEXT,
     PRIMARY KEY(item_id, bidder_id, time),
     FOREIGN KEY(item_id) REFERENCES Item (item_id),
     FOREIGN KEY(bidder_id) REFERENCES User (user_id)
