@@ -1,5 +1,5 @@
 rm -rf dat_files/
-rm user_tmp.db
+rm -f user_tmp.db
 
 for X in $(seq 0 39)
 do
