@@ -1,1 +1,2 @@
---TODO
+SELECT COUNT(DISTINCT USER_ID) AS "number of users"
+FROM USER;
